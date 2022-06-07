@@ -1,6 +1,6 @@
 # Juan Varón Front-end Developer Portfolio 😌
 
-## See how it is going [here](https://juandavarong.github.io)!
+## See how it is going [here](https://juandavaron.github.io)!
 
 This is gonna be a portfolio with:
 

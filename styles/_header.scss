@@ -1,0 +1,54 @@
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $color-LightBlack;
+  z-index: $z-Fixed;
+}
+
+.nav{
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo{
+  color: $color-LightOrange-primary;
+  font-weight: $font-WeightMedium;
+  transition: .4s;
+}
+
+.nav__logo:hover{
+  color: $color-DarkOrange-secondary;
+}
+
+.nav__menu{
+  position: fixed;
+  bottom: 1rem;
+  background-color: $color-container;
+  width: 90%;
+  border-radius: 4rem;
+  padding: 1rem 2.25rem;
+  backdrop-filter: blur(10px);
+}
+
+.nav__list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__link{
+  color: $color-text;
+  font-size: 1.25rem;
+  padding: .4rem;
+  display: flex;
+  border-radius: 5rem;
+}
+
+.active-link{
+  background: linear-gradient(180deg, $color-LightOrange-primary, $color-DarkOrange-secondary);
+  box-shadow: 0 0 16px $color-DarkOrange-secondary;
+}

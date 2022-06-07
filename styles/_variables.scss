@@ -1,0 +1,48 @@
+// Font
+$font-primary: 'Poppins', sans-serif;
+
+$font-SizeBig: 1.75rem;
+$font-SizeH1: 1.5rem;
+$font-SizeH2: 1.25rem;
+$font-SizeH3: 1rem;
+$font-SizeNormal: .93rem;
+$font-SizeSmall: .81rem;
+$font-SizeSmaller: .75rem;
+$font-SizeTiny: .62rem;
+
+$font-WeightMedium: 500;
+$font-WeightSemibold: 600;
+
+// Color
+$color-LightOrange-primary: #f0863f;
+$color-DarkOrange-secondary: #f85c02;
+$color-LightBlack: #101010;
+$color-DarkBlack: #040404;
+
+$color-text: #babec4;
+$color-TitleText: #f0f2f4;
+$color-LightText: #888b91;
+
+$color-container: #242424cc;
+// $color-container: #151c28;
+
+// Z-index
+$z-Tooltip: 10;
+$z-Fixed: 100;
+$z-Modal: 1000;
+
+// Header
+$header-height: 3.5rem;
+
+// Media Queries
+$breakpoint: (
+  medium: 968px,
+);
+
+@mixin breakpoint($size) {
+  $breakpoint-value: map-get($breakpoint, $size);
+
+  @media screen and (min-width: $breakpoint-value){
+    @content;
+  }
+}

@@ -1,0 +1,11 @@
+// Responsive Typography
+@include breakpoint(medium) {
+  $font-SizeBig: 2.5rem;
+  $font-SizeH1: 2.25rem;
+  $font-SizeH2: 1.5rem;
+  $font-SizeH3: 1.25rem;
+  $font-SizeNormal: 1rem;
+  $font-SizeSmall: .87rem;
+  $font-SizeSmaller: .81rem;
+  // $font-SizeTiny: .62rem;
+}

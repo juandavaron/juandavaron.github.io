@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio",
+  "main": "/src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juandavaron/juandavaron.github.io.git"
+  },
+  "keywords": [
+    "javascript",
+    "css",
+    "sass",
+    "html",
+    "portfolio"
+  ],
+  "author": "Juan Varon <juanvarong@gmail.com>",
+  "license": "CC-BY-4.0",
+  "bugs": {
+    "url": "https://github.com/juandavaron/juandavaron.github.io/issues"
+  },
+  "homepage": "https://github.com/juandavaron/juandavaron.github.io#readme"
+}

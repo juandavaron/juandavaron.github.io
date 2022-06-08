@@ -51,3 +51,7 @@
   background: linear-gradient(180deg, $color-LightOrange-primary, $color-DarkOrange-secondary);
   box-shadow: 0 0 16px $color-DarkOrange-secondary;
 }
+
+.scroll-header{
+  box-shadow: 0 4px 4px hsla(0, 0%, 4%, .3);
+}

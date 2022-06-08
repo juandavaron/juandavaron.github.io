@@ -18,10 +18,9 @@
   color: $color-LightOrange-primary;
   font-weight: $font-WeightMedium;
   transition: .4s;
-}
-
-.nav__logo:hover{
-  color: $color-DarkOrange-secondary;
+  &:hover{
+    color: $color-DarkOrange-secondary;
+  }
 }
 
 .nav__menu{
@@ -45,8 +44,6 @@
   font-size: 1.25rem;
   padding: .4rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 5rem;
 }
 

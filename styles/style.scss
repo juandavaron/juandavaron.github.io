@@ -1,9 +1,6 @@
 // imports
 @import 'variables';
-@import 'mediaQuery';
-@import 'header';
-@import 'main';
-@import 'footer';
+
 
 // Base Reset
 *,
@@ -93,3 +90,8 @@ img{
   font-size: $font-SizeSmaller;
   color: $color-LightText;
 }
+
+@import 'mediaQuery';
+@import 'header';
+@import 'main';
+@import 'footer';

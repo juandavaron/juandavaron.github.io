@@ -1,4 +1,4 @@
-// Home Section
+// ** HOME SECTION **
 .home__container{
   position:relative;
   row-gap: 4.5rem;
@@ -92,7 +92,7 @@
 .home__scroll{
   color: $color-text;
   right: -1.5rem;
-  bottom: 4rem;
+  bottom: 4.7rem;
   display: grid;
   row-gap: 2.25rem;
   justify-items: center;
@@ -136,7 +136,7 @@
   color: $color-LightOrange-primary;
 }
 
-// About Section
+// ** ABOUT SECTION  **
 
 .about__container{
   row-gap: 2.5rem;
@@ -181,4 +181,137 @@
 
 .about__description{
   margin-bottom: 2rem;
+}
+
+// ** SKILLS SECTION **
+.skills__container{
+  row-gap: 2rem;
+  padding-top: 1rem;
+}
+
+.skills__content{
+  background-color: $color-container;
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.skills__title{
+  font-size: $font-SizeNormal;
+  font-weight: $font-WeightMedium;
+  color: $color-LightOrange-primary;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills__box{
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.skills__group{
+  display: grid;
+  align-items: flex-start;
+  row-gap: 1rem;
+}
+
+.skills__data{
+  display: flex;
+  column-gap: .5rem;
+}
+
+.skills .bx-check-square{
+  font-size: 1rem;
+  color: $color-LightOrange-primary
+}
+
+.skills__name{
+  font-size: $font-SizeNormal;
+  font-weight: $font-WeightMedium;
+  line-height: 18px;
+}
+
+.skills__level{
+  font-size: $font-SizeTiny;
+}
+
+// ** EXPERIENCE SECTION **
+.experience__tabs{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 2rem;
+}
+
+.experience__button{
+  font-size: $font-SizeH3;
+  font-weight: $font-WeightMedium;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-container;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+  transition: .4s;
+
+  &:hover{
+    color: $color-LightOrange-primary;
+
+  }
+}
+
+.experience__icon{
+  font-size: 1.8rem;
+  margin-right: .25rem;
+}
+
+.experience__data{
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.experience__title{
+  font-size: $font-SizeNormal;
+  font-weight: $font-WeightMedium;
+  
+}
+
+.experience__subtitle{
+  display: inline-block;
+  font-size: $font-SizeSmall;
+  margin-bottom: 1rem;
+}
+
+.experience__calendar{
+  font-size: $font-SizeSmaller;
+  color: $color-LightText;
+}
+
+.experience__rounder{
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: $color-DarkOrange-secondary;
+  border-radius: 50%;
+}
+
+.experience__line{
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: $color-DarkOrange-secondary;
+  transform: translate(6px, -7px);
+}
+
+.experience [data-content]{
+  display: none;
+}
+
+.experience__active[data-content]{
+  display: block;
+}
+
+.experience__button.experience__active{
+  color: $color-LightOrange-primary
 }

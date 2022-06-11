@@ -5,7 +5,8 @@
 This is gonna be a portfolio with:
 
 - ✅An **HTML**, **CSS (SASS)** and **JavaScript** project.
+- ✅BEM methodology.
 - 🔒Responsive Desing.
 - 🔒Smooth scrolling.
 - 🔒**Dark** and **light** mode.
-- 🔒Toggle language between **Spanish** and **English**
+- 🔒Toggle language between **Spanish** and **English**.

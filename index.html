@@ -43,7 +43,7 @@
           </li>
 
           <li class="nav__item">
-            <a href="#experience" class="nav__link">
+            <a href="#work" class="nav__link">
               <i class='bx bx-briefcase'></i>
             </a>
           </li>
@@ -436,13 +436,123 @@
       </div>
     </section>
 
-    <section class="work section" id="work"></section>
+    <section class="work section" id="work">
+      <span class="section__subtitle">Este es</span>
+      <h2 class="section__title">Mi portafolio</h2>
 
-    <section class="contact section" id="contact"></section>
+      <div class="work__filters">
+        <span class="work__item active-work" data-filter="all">Todos</span>
+        <span class="work__item" data-filter=".web">Web</span>
+        <span class="work__item" data-filter=".project">Project</span>
+        <!-- <span class="work__item" data-filter=".design">Design</span> -->
+      </div>
+
+      <div class="work__container container grid">
+        <div class="work__card mix web">
+          <img src="/assets/img/countdown-timer_.png" alt="countdown-timer" class="work__img">
+
+          <h3 class="work__title">Web Develop</h3>
+
+          <a href="https://juandavaron.github.io/P-countdown-timer/" class="work__button" target="_blank">
+            Demo <i class='bx bx-chevrons-right work__icon'></i>
+          </a>
+        </div>
+
+        <div class="work__card mix project">
+          <img src="/assets/img/order-summary.jpg" alt="countdown-timer" class="work__img">
+
+          <h3 class="work__title">Project</h3>
+
+          <a href="" class="work__button">
+            Demo <i class='bx bx-chevrons-right work__icon'></i>
+          </a>
+        </div>
+
+        <!-- <div class="work__card mix design">
+          <img src="/assets/img/countdown-timer_.png" alt="countdown-timer" class="work__img">
+
+          <h3 class="work__title">Brand Design</h3>
+
+          <a href="" class="work__button">
+            Demo <i class='bx bx-chevrons-right work__icon'></i>
+          </a>
+        </div>
+
+        <div class="work__card mix web">
+          <img src="/assets/img/order-summary.jpg" alt="countdown-timer" class="work__img">
+
+          <h3 class="work__title">Web Design</h3>
+
+          <a href="" class="work__button">
+            Demo <i class='bx bx-chevrons-right work__icon'></i>
+          </a>
+        </div>
+
+        <div class="work__card mix movil">
+          <img src="/assets/img/countdown-timer_.png" alt="countdown-timer" class="work__img">
+  
+          <h3 class="work__title">App Movil</h3>
+  
+          <a href="" class="work__button">
+            Demo <i class='bx bx-chevrons-right work__icon'></i>
+          </a>
+        </div> -->
+      </div>
+
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <span class="section__subtitle">El café va por mi cuenta</span>
+      <h2 class="section__title">Hablemos</h2>
+
+      <div class="contact__container container grid">
+        <div class="contact__content">
+          <h3 class="contact__title">Contáctame</h3>
+
+          <div class="contact__info">
+            <div class="contact__card">
+              <i class='bx bx-envelope contact__card-icon'></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">juanvarong@gmail.com</span>
+
+              <a href="mailto:juanvarong@gmail.com" target="_blank" class="contact__button">
+                Escríbeme <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+              </a>
+            </div>
+
+            <div class="contact__card">
+              <i class='bx bx-map contact__card-icon'></i>
+              <h3 class="contact__card-title">Colombia</h3>
+              <span class="contact__card-data">Bogotá</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact__content">
+          <h3 class="contact__title">Cuéntame tu proyecto</h3>
+
+          <form action="" class="contact__form">
+            <div class="contact__form-div">
+              <label for="" class="contact__form-tag">Email</label>
+              <input type="email" placeholder="Escribe tu correo electrónico" class="contact__form-input">
+            </div>
+
+            <div class="contact__form-div contact__form-area">
+              <label for="" class="contact__form-tag">Proyecto</label>
+              <textarea placeholder="Escribe tu idea" name="" id="" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+
+            <button class="button">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer"></footer>
 
+  <script src="/src/mixitup.min.js"></script>
   <script src="/src/app.js"></script>
 </body>
 

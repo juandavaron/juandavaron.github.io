@@ -1,10 +1,4 @@
-// imports
 @import 'variables';
-@import 'mediaQuery';
-@import 'header';
-@import 'main';
-@import 'footer';
-
 
 // Base Reset
 *,
@@ -95,3 +89,36 @@ img{
   color: $color-LightText;
 }
 
+// ** SCROLL BAR **
+
+::-webkit-scrollbar{
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: $color-LightText;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: $color-LightOrange-primary;
+  border-radius: .5rem;
+
+  &:hover{
+    background-color: hsl(22, 80%, 48%);
+  }
+}
+
+// ** TOGGLE LIGHT / DARK **
+.change-theme{
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover{
+    color: $color-LightOrange-primary;
+  }
+}
+
+// imports
+@import 'mediaQuery';
+@import 'header';
+@import 'main';
+@import 'footer';

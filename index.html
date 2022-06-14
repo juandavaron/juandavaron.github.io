@@ -42,6 +42,12 @@
             </a>
           </li>
 
+          <!-- uncomment adding id='experience' to the section -->
+          <!-- <li class="nav__item">
+            <a href="#experience" class="nav__link">
+              <i class='bx bx-book-content'></i>
+            </a> -->
+
           <li class="nav__item">
             <a href="#work" class="nav__link">
               <i class='bx bx-briefcase'></i>
@@ -56,7 +62,7 @@
         </ul>
       </div>
 
-      <i class='bx bx-moon toggle-theme' id="theme-button"></i>
+      <i class='bx bx-moon change-theme' id="theme-button"></i>
 
       </div>
     </nav>
@@ -269,7 +275,7 @@
       </div>
     </section>
 
-    <section class="experience section" id="experience">
+    <section class="experience section">
       <span class="section__subtitle">Mira mi</span>
       <h2 class="section__title">Experiencia</h2>
 
@@ -523,8 +529,8 @@
 
             <div class="contact__card">
               <i class='bx bx-map contact__card-icon'></i>
-              <h3 class="contact__card-title">Colombia</h3>
-              <span class="contact__card-data">Bogotá</span>
+              <h3 class="contact__card-title">Ubicación</h3>
+              <span class="contact__card-data">Bogotá, Colombia</span>
             </div>
           </div>
         </div>
@@ -532,25 +538,63 @@
         <div class="contact__content">
           <h3 class="contact__title">Cuéntame tu proyecto</h3>
 
-          <form action="" class="contact__form">
+          <form action="mailto:juanvarong@gmail.com" method="post" enctype="multipart/form-data" name="EmailForm"
+            class="contact__form">
             <div class="contact__form-div">
               <label for="" class="contact__form-tag">Email</label>
-              <input type="email" placeholder="Escribe tu correo electrónico" class="contact__form-input">
+              <input type="email" placeholder="Escribe tu correo electrónico" class="contact__form-input"
+                name="ContactEmail">
             </div>
 
             <div class="contact__form-div contact__form-area">
-              <label for="" class="contact__form-tag">Proyecto</label>
-              <textarea placeholder="Escribe tu idea" name="" id="" cols="30" rows="10" class="contact__form-input"></textarea>
+              <label for="" class="contact__form-tag" name="ContactComment">Proyecto</label>
+              <textarea placeholder="Escribe tu idea" name="" id="" cols="30" rows="10"
+                class="contact__form-input"></textarea>
             </div>
 
-            <button class="button">Enviar</button>
+            <button class="button" type="submit" value="Submit">Enviar</button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="footer__container container">
+      <h1 class="footer__title">Juan Varón</h1>
+      <ul class="footer__list">
+        <li>
+          <a href="#about" class="footer__link">Sobre mí</a>
+        </li>
+        <li>
+          <a href="#experience" class="footer__link">Experiencia</a>
+        </li>
+        <li>
+          <a href="#work" class="footer__link">Proyectos</a>
+        </li>
+      </ul>
+
+      <ul class="footer__social">
+        <a href="https://www.linkedin.com/in/juanvarong/" target="_blank" class="footer__social-link">
+          <i class='bx bxl-linkedin-square'></i>
+        </a>
+        <a href="https://github.com/juandavaron" target="_blank" class="footer__social-link">
+          <i class='bx bxl-github'></i>
+        </a>
+        <a href="https://www.instagram.com/nosoyesejuan/" target="_blank" class="footer__social-link">
+          <i class='bx bxl-instagram'></i>
+        </a>
+        <a href="https://twitter.com/Nosoyesejuan_" target="_blank" class="footer__social-link">
+          <i class='bx bxl-twitter'></i>
+        </a>
+      </ul>
+
+      <span class="footer__copy">
+        &#169; Juan Varon. All rigths reserved
+      </span>
+    </div>
+
+  </footer>
 
   <script src="/src/mixitup.min.js"></script>
   <script src="/src/app.js"></script>

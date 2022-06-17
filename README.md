@@ -5,7 +5,7 @@
 This is gonna be a portfolio with:
 
 - ✅An **HTML**, **CSS (SASS)** and **JavaScript** project.
-- 🔒Responsive Desing.
-- 🔒Smooth scrolling.
-- 🔒**Dark** and **light** mode.
+- ✅Responsive Desing.
+- ✅Smooth scrolling.
+- ✅**Dark** and **light** mode.
 - 🔒Toggle language between **Spanish** and **English**

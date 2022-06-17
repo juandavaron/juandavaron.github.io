@@ -1,5 +1,5 @@
+//Add class scroll-header to header element when viewport height is bigger than 50.
 function scrollHeader(){
-  //Add class scroll-header to header element when viewport height is bigger than 50.
   const header = document.getElementById('header');
   if(this.scrollY >= 50){
     header.classList.add('scroll-header');
@@ -10,7 +10,7 @@ function scrollHeader(){
 
 window.addEventListener('scroll', scrollHeader);
 
-// Experience Tabs
+// EXPERIENCE TABS
 const tabs = document.querySelectorAll('[data-target]'),
   tabContents = document.querySelectorAll('[data-content]');
 
@@ -30,7 +30,7 @@ tabs.forEach(tab =>{
   })
 })
 
-// Portfolio
+// PORTFOLIO
 let mixerPortfolio = mixitup('.work__container', {
   selectors: {
       target: '.work__card'
@@ -49,7 +49,7 @@ function activeWork() {
 
 linkWork.forEach(item => item.addEventListener('click', activeWork))
 
-// Scroll sections active link
+// SCROLL SECTIONS ACTIVE LINK
 const id = document.querySelectorAll('section[id]');
 const sections = [...id];
 
@@ -70,3 +70,33 @@ function scrollActive(){
 };
 
 window.addEventListener('scroll', scrollActive);
+
+// TOGGLE THEME
+const themeButton = document.getElementById('theme-button');
+const lightTheme = 'light-theme';
+const iconTheme = 'bx-sun';
+
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+// We obtain the current theme that the interface has by validating the light-theme class
+const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => document.body.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun';
+
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+  // If the validation is fulfilled, we ask what the issue was to know if we activated or desactivated the light
+  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme);
+  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme);
+}
+
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+  // Add or remove the light / icon theme
+  document.body.classList.toggle(lightTheme);
+  themeButton.classList.toggle(iconTheme);
+  // We save the theme and the current icon that the user chose
+  localStorage.setItem('selected-theme', getCurrentTheme())
+  localStorage.setItem('selected-icon', getCurrentIcon())
+})

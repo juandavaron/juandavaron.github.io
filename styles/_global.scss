@@ -1,0 +1,180 @@
+// Base Reset
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--color-body);
+  color: var(--color-text);
+  transition: .4s; /* For Light mode animation */
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: $font-primary;
+  font-size: $font-SizeNormal;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-title);
+  font-weight: $font-WeightSemibold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.section {
+  padding: 4.5rem 0 1rem;
+
+  &__title,
+  &__subtitle {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: $font-SizeH2;
+    color: var(--color-primary);
+    margin-bottom: 2rem;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: $font-SizeSmaller;
+    color: var(--color-text-light);
+  }
+}
+
+// ** SCROLL BAR **
+
+::-webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: hsl(var(--second-hue), 8%, 38%);
+
+  &-thumb {
+    background-color: hsl(var(--first-hue), var(--sat), var(--lig));
+    border-radius: .5rem;
+
+    &:hover {
+      background-color: hsl(var(--first-hue), var(--sat), 57%);
+    }
+  }
+}
+
+// ** TOGGLE LIGHT / DARK **
+.change-theme {
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: .3s;
+
+  &:hover {
+    color: var(--color-primary);
+  }
+}
+
+body.light-theme {
+  --color-title: hsl(var(--second-hue), 15%, 15%);
+  --color-text: hsl(var(--second-hue), 8%, 35%);
+  --color-body: hsl(var(--second-hue), 100%, 99%);
+  --color-container: #fff;
+}
+
+.light-theme {
+  & .scroll-header {
+    box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
+  }
+
+  & .nav__menu {
+    background-color: hsla(var(--second-hue), 32%, 90%, .8);
+  }
+
+  & .section__subtitle {
+    color: var(--color-text);
+  }
+
+  & .home__social {
+
+    &-link {
+      box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
+    }
+  }
+
+  & .footer__social-link {
+    background-color: var(--color-title);
+  }
+
+  & .home__social-link,
+  & .home__scroll,
+  & .footer__title,
+  & .footer__link,
+  & .footer__copy {
+    color: var(--color-title);
+  }
+
+  & .about__box {
+    box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
+  }
+
+  & .skills__content,
+  & .experience__button,
+  & .work__card,
+  & .contact__card {
+    box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .1);
+  }
+
+  &::-webkit-scrollbar {
+    background-color: hsl(var(--second-hue), 8%, 70%);
+
+    &-thumb {
+      background-color: hsl(var(--first-hue), var(--sat), 70%);
+
+      &:hover{
+        background-color: hsl(var(--first-hue), var(--sat), 57%);
+      }
+    }
+  }
+}

@@ -14,17 +14,19 @@ $font-WeightMedium: 500;
 $font-WeightSemibold: 600;
 
 // Color
-$color-LightOrange-primary: #ff933b;
-$color-DarkOrange-secondary: #ff6e1b;
-$color-LightBlack: #101010;
-$color-DarkBlack: #040404;
-
-$color-text: #babec4;
-$color-TitleText: #f0f2f4;
-$color-LightText: #888b91;
-
-$color-container: #242424cc;
-// $color-container: #151c28;
+:root {
+  --first-hue: 17;
+  --sat: 100%;
+  --lig: 61%;
+  --second-hue: 219;
+  --color-primary: hsl(var(--first-hue), var(--sat), var(--lig));
+  --color-primary-alt: hsl(var(--first-hue), var(--sat), 57%); /* -4% */
+  --color-title: hsl(var(--second-hue), 15%, 95%);
+  --color-text: hsl(var(--second-hue), 8%, 75%);
+  --color-text-light: hsl(var(--second-hue), 4%, 55%);
+  --color-body: hsl(var(--second-hue), 48%, 8%);
+  --color-container: hsl(var(--second-hue), 32%, 12%);
+}
 
 // Z-index
 $z-Tooltip: 10;
@@ -33,16 +35,3 @@ $z-Modal: 1000;
 
 // Header
 $header-height: 3.5rem;
-
-// Media Queries
-$breakpoint: (
-  medium: 968px,
-);
-
-@mixin breakpoint($size) {
-  $breakpoint-value: map-get($breakpoint, $size);
-
-  @media screen and (min-width: $breakpoint-value){
-    @content;
-  }
-}

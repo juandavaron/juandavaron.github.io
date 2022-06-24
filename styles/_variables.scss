@@ -19,6 +19,7 @@ $font-WeightSemibold: 600;
   --sat: 100%;
   --lig: 61%;
   --second-hue: 219;
+  // --color-primary: #ff7038;
   --color-primary: hsl(var(--first-hue), var(--sat), var(--lig));
   --color-primary-alt: hsl(var(--first-hue), var(--sat), 57%); /* -4% */
   --color-title: hsl(var(--second-hue), 15%, 95%);

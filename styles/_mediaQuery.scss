@@ -23,6 +23,8 @@ $breakpoint: (
   }
 }
 
+// Call
+
 @include breakpointMax(small) {
   .nav__menu {
     padding: 1rem 1.5rem;
@@ -33,14 +35,15 @@ $breakpoint: (
       flex-direction: column;
     }
 
-    &__handle {
+    &__handle,
+    &__img{
       width: 150px;
       height: 253px;
     }
 
-    &__img {
-      width: 130px;
-    }
+    // &__img {
+    //   width: 130px;
+    // }
   }
 
   .about__info {
@@ -181,14 +184,16 @@ $breakpoint: (
   }
 
   .home {
-    &__handle {
-      width: 290px;
+    &__handle,
+    &__img {
+      // width: 290px;
+      width: 270px;
       height: 400px;
     }
 
-    &__img {
-      width: 220px;
-    }
+    // &__img {
+    //   width: 220px;
+    // }
 
     &__social {
       &-link {

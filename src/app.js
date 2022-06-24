@@ -1,5 +1,6 @@
-//Add class scroll-header to header element when viewport height is bigger than 50.
+// HEADER
 function scrollHeader(){
+  //Add class scroll-header to header element when scrollY is bigger than 50.
   const header = document.getElementById('header');
   if(this.scrollY >= 50){
     header.classList.add('scroll-header');
@@ -31,6 +32,7 @@ tabs.forEach(tab =>{
 })
 
 // PORTFOLIO
+// Mix
 let mixerPortfolio = mixitup('.work__container', {
   selectors: {
       target: '.work__card'
@@ -40,6 +42,7 @@ let mixerPortfolio = mixitup('.work__container', {
   }
 });
 
+//Change background color
 const linkWork = document.querySelectorAll('.work__item')
 
 function activeWork() {
